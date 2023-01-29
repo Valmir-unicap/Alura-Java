@@ -17,8 +17,7 @@ public class Fluxo {
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
             try { //bloco de código perigoso.
-                int a = 9;
-                int b = a / 0; //erro aritmético, não se pode dividir por zero.
+                int a = i / 0; //erro aritmético, não se pode dividir por zero.
             }catch (ArithmeticException e){ //caso ocorre erro aritmético, ele vai executar o que está dentro do catch
                 System.out.println("Erro aritmético, você tentou dividir por zero.");
             }
