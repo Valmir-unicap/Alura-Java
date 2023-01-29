@@ -7,6 +7,7 @@ public class Fluxo {
         }catch (ArithmeticException | NullPointerException e){
             String mensagem = e.getMessage();
             System.out.println("Ocorreu erro de "+mensagem);
+            e.printStackTrace(); //pega o rastro da pilha de execução java
         }
         System.out.println("Fim do main");
     }
