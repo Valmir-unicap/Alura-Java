@@ -20,7 +20,7 @@ public class Fluxo {
         System.out.println("Inicio do metodo2");
         for (int i = 1; i <= 5; i++) {
             System.out.println(i);
-            int a = 9 / 0; //erro aritmético, não se pode dividir por zero.
+            int a = i / 0; //erro aritmético, não se pode dividir por zero.
         }
         System.out.println("Fim do metodo2");
     }
