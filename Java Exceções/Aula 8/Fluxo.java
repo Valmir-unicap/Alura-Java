@@ -13,13 +13,13 @@ public class Fluxo {
         System.out.println("Fim do main");
     }
 
-    private static void metodo1() throws MinhaExcecao {//Estou usando uma exceção verificada pelo compilador
+    private static void metodo1() throws MinhaExcecao {//Estou usando uma exceção verificada pelo compilador, por isso a assinatura.
         System.out.println("Inicio do metodo1");
         metodo2();
         System.out.println("Fim do metodo1");
     }
 
-    private static void metodo2() throws MinhaExcecao{//Estou usando uma exceção verificada pelo compilador
+    private static void metodo2() throws MinhaExcecao{//Estou usando uma exceção verificada pelo compilador, por isso a assinatura.
         System.out.println("Inicio do metodo2");
         throw new MinhaExcecao("Oiiii, infelizmente deu erro! :(");//pega uma exceção criada por me.
     }
